@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil — Real Red</title>
+  <link rel="stylesheet" href="styles/style.css" />
+   <link rel="stylesheet" href="styles/perfil.css" />
+</head>
+<body>
+
+  <!-- ===== Nav lateral ===== -->
+  <aside class="sidebar-left nav-rail">
+    <nav class="menu" aria-label="Navegación principal">
+      <a class="menu__item is-active" href="index.html">
+        <span class="menu__icon"><img src="Assets/RedReal.png" alt="Inicio"></span>
+        <span class="menu__label">Home</span>
+      </a>
+      <a class="menu__item" href="#">
+        <span class="menu__icon"><img src="Assets/lupa.png" alt="Buscar"></span>
+        <span class="menu__label">Search</span>
+      </a>
+      <!-- …otros items… -->
+    </nav>
+    <button class="menu__cta" type="button">
+      <span class="menu__icon">＋</span>
+      <span class="menu__label">Crear</span>
+    </button>
+  </aside>
+
+  <!-- ===== Contenedor principal ===== -->
+  <div class="shell">
+
+    <!-- Topbar móvil -->
+    <header class="topbar" aria-label="Barra superior">
+      <div class="topbar__brand">
+        <img class="logo" src="" alt="Real Red"> RealRed
+      </div>
+      <input class="topbar__search" type="search" placeholder="Buscar…" aria-label="Buscar">
+      <button class="topbar__btn" type="button">🔔</button>
+    </header>
+
+    <!-- ===== Contenido ===== -->
+    <main class="content">
+
+      <!-- Biografía -->
+      <section class="card mb-16" aria-label="Biografía">
+        <h2 class="card-title">Biografía</h2>
+      </section>
+
+      <!-- Perfil -->
+      <section class="card mb-16" aria-label="Perfil de usuario">
+        <table class="perfil-table">
+          <tr>
+            <!-- Foto de perfil -->
+            <td class="perfil-foto">
+              <img src="Assets/voidi.jpg" alt="Foto de perfil" class="perfil-foto-img">
+            </td>
+
+            <!-- Información -->
+            <td class="perfil-info">
+              <header class="perfil-header">
+                <h1>Voidi</h1>
+                <p class="muted">Oda</p>
+              </header>
+
+              <article>
+                <h2>Acerca de mí</h2>
+                <p class="muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </article>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Pie de página -->
+      <footer class="card perfil-footer" aria-label="Pie de página">
+        <p class="muted">(C) Rickie Lukens, 2023</p>
+      </footer>
+    </main>
+
+    <!-- ===== Sidebar derecha (chat/contactos) ===== -->
+    <aside class="sidebar-right" aria-label="Chat">
+      <section class="card">
+        <h2 class="card-title">Contactos</h2>
+        <ul class="list">
+          <li>
+            <a href="usuario.html">
+              <img class="avatar" src="Assets/usuario.jpg" alt="usuario avatar"> 
+              usuario
+            </a>
+          </li>
+          <li>
+            <a href="otrapersona.html">
+              <img class="avatar" src="Assets/otrapersona.png" alt="otrapersona avatar"> 
+              Otra Persona
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Red social</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <!-- ===== Sidebar izquierda / Navegación ===== -->
+    <aside class="sidebar-left nav-rail">
+        <nav class="menu" aria-label="Navegación principal">
+            <a class="menu__item is-active" href="#">
+                <span class="menu__icon">
+                    <img src="Assets/RedReal.png" alt="Real Red (inicio)">
+                </span>
+                <span class="menu__label">Home</span>
+            </a>
+            <a class="menu__item" href="#">
+                <span class="menu__icon">
+                    <img src="Assets/lupa.png" alt="Buscar">
+                </span>
+                <span class="menu__label">Search</span>
+            </a>
+            <!-- … resto de items … -->
+        </nav>
+        <button class="menu__cta" type="button">
+            <span class="menu__icon">＋</span>
+            <span class="menu__label">Crear</span>
+        </button>
+    </aside>
+
+    <!-- ===== Layout principal ===== -->
+    <div class="shell">
+        <!-- Header solo visible en móvil -->
+        <header class="topbar" aria-label="Barra superior">
+            <div class="topbar__brand">
+                <img class="logo" src="Assets/RedReal.png" alt="Real Red"> RealRed
+            </div>
+            <input class="topbar__search" type="search" placeholder="Buscar…" aria-label="Buscar">
+            <button class="topbar__btn" type="button">🔔</button>
+        </header>
+
+        <!-- ===== Contenido ===== -->
+        <main class="content">
+            <section class="feed" aria-label="Publicaciones">
+                <!-- ===== Primer post ===== -->
+                <article class="post" aria-labelledby="post-1-author">
+                    <header class="post__header">
+                        <a href="usuario.html">
+                            <img class="avatar" src="Assets/usuario.jpg" alt="Avatar usuario">
+                        </a>
+                        <div class="post__meta">
+                            <a href="usuario.html"><strong id="post-1-author">Usuario</strong></a>
+                            <span class="muted">• Ciudad • 2 h</span>
+                        </div>
+                        <button class="post__more" type="button" aria-label="Más opciones">⋯</button>
+                    </header>
+                    <figure class="post__media">
+                        <img src="Assets/rap.jpg" alt="rapture">
+                    </figure>
+                    <div class="post__actions">
+                        <button type="button" aria-pressed="false">♡</button>
+                        <button type="button">💬</button>
+                        <button type="button">↗</button>
+                    </div>
+                    <div class="post__body">
+                        <p><strong>Usuario</strong> Lorem ipsum dolor sit amet… #viaje</p>
+                        <a class="link" href="#">Ver los 12 comentarios</a>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Añade un comentario…">
+                            <button type="submit">Publicar</button>
+                        </form>
+                    </div>
+                </article>
+
+                <!-- ===== Segundo post ===== -->
+                <article class="post" aria-labelledby="post-2-author">
+                    <header class="post__header">
+                        <a href="otro.html">
+                            <img class="avatar" src="Assets/otrapersona.png" alt="Avatar otra persona">
+                        </a>
+                        <div class="post__meta">
+                            <a href="otro.html"><strong id="post-2-author">Otra Persona</strong></a>
+                            <span class="muted">• Real • 5 h</span>
+                        </div>
+                        <button class="post__more" type="button" aria-label="Más opciones">⋯</button>
+                    </header>
+                    <figure class="post__media_video">
+                        <video 
+                        src="Assets/real.mp4" 
+                        controls              
+                        <!-- barra de tiempo, play/pause, volumen, mute -->
+                        loop 
+                        playsinline
+                        preload="metadata">
+                        ></video>
+                    </figure>
+                    <div class="post__actions">
+                        <button type="button" aria-pressed="false">♡</button>
+                        <button type="button">💬</button>
+                        <button type="button">↗</button>
+                    </div>
+                    <div class="post__body">
+                        <p><strong>Otra Persona</strong> Un edit durísimo de metal sonic.</p>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Añade un comentario…">
+                            <button type="submit">Publicar</button>
+                        </form>
+                    </div>
+                </article>
+
+                 <!-- ===== Tercer post ===== -->
+                <article class="post" aria-labelledby="post-2-author">
+                    <header class="post__header">
+                        <a href="otro.html">
+                            <img class="avatar" src="Assets/otrapersona.png" alt="Avatar otra persona">
+                        </a>
+                        <div class="post__meta">
+                            <a href="otro.html"><strong id="post-2-author">Otra Persona</strong></a>
+                            <span class="muted">• Real • 5 h</span>
+                        </div>
+                        <button class="post__more" type="button" aria-label="Más opciones">⋯</button>
+                    </header>
+                    <figure class="post__media_video">
+                        <video 
+                       
+                        src="Assets/bal.mp4"
+                        controls              <!-- barra de tiempo, play/pausa, volumen, mute -->
+                        loop                  
+                        playsinline           
+                        preload="metadata">   
+                    </video>
+                    
+                   
+                    </figure>
+                    <div class="post__actions">
+                        <button type="button" aria-pressed="false">♡</button>
+                        <button type="button">💬</button>
+                        <button type="button">↗</button>
+                    </div>
+                    <div class="post__body">
+                        <p><strong>Otra Persona</strong> ...</p>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Añade un comentario…">
+                            <button type="submit">Publicar</button>
+                        </form>
+                    </div>
+                </article>
+
+                <!-- ===== Cuarto post ===== -->
+                <article class="post" aria-labelledby="post-3-author">
+                    <header class="post__header">
+                        <a href="voidi.html">
+                            <img class="avatar" src="Assets/voidi.jpg" alt="Avatar voidi">
+                        </a>
+                        <div class="post__meta">
+                            <a href="voidi.html"><strong id="post-3-author">voidi</strong></a>
+                            <span class="muted">• meme rancio • 5 h</span>
+                        </div>
+                        <button class="post__more" type="button" aria-label="Más opciones">⋯</button>
+                    </header>
+                    <figure class="post__media">
+                      
+                            <img src="Assets/bochi.gif" alt="meme rancio de facebook robado">
+                      
+                        
+                    </figure>
+                    <div class="post__actions">
+                        <button type="button" aria-pressed="false">♡</button>
+                        <button type="button">💬</button>
+                        <button type="button">↗</button>
+                    </div>
+                    <div class="post__body">
+                        <p><strong>voidi</strong> oda.</p>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Añade un comentario…">
+                            <button type="submit">Publicar</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- ===== Sidebar derecha ===== -->
+        <aside class="sidebar-right" aria-label="Contactos y sugerencias">
+            <section class="card" aria-labelledby="mensajes-title">
+                <h2 id="mensajes-title">Mensajes</h2>
+                <ul class="list">
+                    <li>
+                        <a href="usuario.html">
+                            <img class="avatar" src="Assets/usuario.jpg" alt="Avatar Amigo real 1"> 
+                        </a>
+                        
+                        Omg
+                    </li>
+
+                    <li>
+                        <a href="otrapersona.html">
+                             <img class="avatar" src="Assets/otrapersona.png" alt="Avatar Amigo real 2"> 
+                             
+                        </a>
+                        They hit the second towers
+                       </li>
+
+
+                    <li>
+                        <a href="voidi.html">
+                            <img class="avatar" src="Assets/voidi.jpg" alt="Avatar oda"> 
+                        </a>
+                        oda
+                    </li>
+                </ul>
+                <a class="link" href="#">Ver todos</a>
+            </section>
+
+            <section class="card" aria-labelledby="sugerencias-title">
+                <h2 id="sugerencias-title">Sugerencias para ti</h2>
+                <ul class="suggestions">
+                    <li>
+                        <img class="avatar" src="Assets/pambi.jpg" alt="pambi">
+                        <div>
+                            <strong>Cuenta de criptomonedas que para nada es una estafa</strong>
+                            <span class="muted block">Popular</span>
+                        </div>
+                        <button class="btn-small" type="button">Seguir</button>
+                    </li>
+                    <li>
+                        <img class="avatar" src="Assets/xb.png" alt="xbox logo">
+                        <div>
+                            <strong>xbox.mx</strong>
+                            <span class="muted block">Recomendado</span>
+                        </div>
+                        <button class="btn-small" type="button">Seguir</button>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+
+      <!-- Pie de página (copyright) -->
+      <footer class="card" aria-label="Pie de página">
+        <p class="muted" style="margin:0; text-align:center;">(C) Rickie Lukens, 2023</p>
+      </footer>
+    </main>
+</body>
+
+</html>

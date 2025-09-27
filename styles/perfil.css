@@ -1,0 +1,56 @@
+/* Espaciado genérico */
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+/* Títulos en cards */
+.card-title {
+  margin: 0;
+}
+
+/* Tabla de perfil */
+.perfil-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 16px;
+}
+
+.perfil-foto {
+  width: 280px;
+  vertical-align: top;
+}
+
+.perfil-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+}
+
+.perfil-info {
+  vertical-align: top;
+}
+
+.perfil-header {
+  margin-bottom: 12px;
+}
+
+.perfil-header h1 {
+  margin: 0;
+}
+
+.perfil-header .muted {
+  margin: .25rem 0 0;
+}
+
+.perfil-info h2 {
+  margin: 0 0 .5rem;
+}
+
+/* Pie del perfil */
+.perfil-footer p {
+  margin: 0;
+  text-align: center;
+}
