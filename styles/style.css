@@ -332,7 +332,10 @@ svg {
     }
 
     .sidebar-right {
-        display: none
+       display: block;        
+    margin-top: 16px;      
+    position: relative;    
+    width: 100%; 
     }
 }
 
